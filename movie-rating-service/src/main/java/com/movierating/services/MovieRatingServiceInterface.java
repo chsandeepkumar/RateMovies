@@ -1,13 +1,13 @@
 package com.movierating.services;
 
-import java.util.Optional;
 
-import com.movierating.dtos.RatingDto;
+import com.movierating.dtos.RequestRatingDto;
+import com.movierating.dtos.ResponseRatingDto;
 
 public interface MovieRatingServiceInterface {
 	
-	RatingDto SaveRating(RatingDto ratingDto);
+	ResponseRatingDto saveRating(RequestRatingDto ratingDto);
 	
-	RatingDto GetRating(int ratingId);
+	ResponseRatingDto getRating(int movieId);
 
 }

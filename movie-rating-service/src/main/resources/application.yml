@@ -1,0 +1,17 @@
+#server properties for AWS elastic bean stack
+server:
+  port: 9080
+
+spring:
+  profiles: local
+  datasource:
+    url: jdbc:mysql://localhost:5002/rate_movies?useSSL=false    
+    username: root
+    password: 
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
